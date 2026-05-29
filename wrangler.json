@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "tfms-tv-panelabc",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-05-29",
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "tfms-db",
+      "database_id": "187cf553-acd7-446d-96be-bdc334b40443"
+    }
+  ],
+
+  "kv_namespaces": [
+    {
+      "binding": "KV_CONNECTIONS",
+      "id": "06448550412447838b058fd8c450fbab"
+    }
+  ],
+
+  "observability": {
+    "enabled": true
+  }
+}
